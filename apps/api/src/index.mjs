@@ -1,0 +1,1 @@
+export function describeApi() { return { product: "hacker-house-medellin", purpose: "Membership, rooms, desks, events, guest check-ins, and resident ops coordinated through one warm, transparent platform.", routes: ['/healthz', '/api/config', '/api/events', '/api/leads', '/api/alerts'] }; }

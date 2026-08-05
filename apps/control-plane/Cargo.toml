@@ -1,0 +1,9 @@
+[package]
+name = "hhm-control-plane"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Repository-family control plane for Hacker House Medellín"
+
+[dependencies]
+hhm-catalog = { path = "../../packages/catalog" }

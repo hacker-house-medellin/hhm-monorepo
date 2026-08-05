@@ -1,0 +1,52 @@
+{
+  "org": "hacker-house-medellin",
+  "brand": "Hacker House Medell\u00edn",
+  "repos": {
+    "clients": "hacker-house-medellin/hhm-clients",
+    "libs": "hacker-house-medellin/hhm-libs",
+    "monorepo": "hacker-house-medellin/hhm-monorepo",
+    "infra": "hacker-house-medellin/hhm-infra",
+    "marketing": "hacker-house-medellin/hacker-house-medellin.github.io"
+  },
+  "apps": [
+    "api",
+    "web",
+    "ops-console",
+    "control-plane"
+  ],
+  "packages": [
+    "contracts",
+    "ui",
+    "testkit",
+    "catalog"
+  ],
+  "repositories": [
+    "hhm-interfaces",
+    "hhm-api",
+    "hhm-web-mash",
+    "hhm-web-leptos",
+    "hhm-web-dioxus",
+    "hhm-cli",
+    "hhm-sync",
+    "hhm-infra",
+    "hhm-clients",
+    "hhm-libs",
+    "hacker-house-medellin.github.io"
+  ],
+  "capabilities": [
+    "bookings",
+    "occupancy",
+    "community",
+    "events",
+    "alerts",
+    "audit"
+  ],
+  "integrations": [
+    "Booking calendars",
+    "Door access",
+    "Stripe",
+    "WhatsApp",
+    "Community events",
+    "Occupancy sensors"
+  ]
+}

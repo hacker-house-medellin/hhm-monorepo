@@ -1,0 +1,6 @@
+[package]
+name = "hhm-catalog"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Typed service catalog for Hacker House Medellín"
