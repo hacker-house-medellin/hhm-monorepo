@@ -27,5 +27,3 @@ exclude = [".env", ".env.*", "node_modules/**", "target/**", "dist/**", "*.log",
 
 [scripts]
 test = "bash scripts/test.sh"
-validate-submodules = "bash scripts/validate-zed-submodules.sh"
-install-with-submodules = "bash scripts/zed-install-with-submodules.sh"

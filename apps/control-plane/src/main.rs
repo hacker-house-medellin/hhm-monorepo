@@ -4,5 +4,7 @@ fn main() {
         std::process::exit(2);
     }
     println!("organization={}", hhm_catalog::ORGANIZATION);
-    for service in hhm_catalog::SERVICES { println!("service={service}"); }
+    for service in hhm_catalog::SERVICES {
+        println!("service={service}");
+    }
 }
