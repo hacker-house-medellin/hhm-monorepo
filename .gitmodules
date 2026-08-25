@@ -1,0 +1,56 @@
+[submodule "apps/deployments/hhm-clients"]
+	path = apps/deployments/hhm-clients
+	url = https://github.com/hacker-house-medellin/hhm-clients.git
+	branch = main
+[submodule "apps/deployments/hhm-interfaces"]
+	path = apps/deployments/hhm-interfaces
+	url = https://github.com/hacker-house-medellin/hhm-interfaces.git
+	branch = main
+[submodule "apps/deployments/hhm-sync"]
+	path = apps/deployments/hhm-sync
+	url = https://github.com/hacker-house-medellin/hhm-sync.git
+	branch = main
+[submodule "apps/deployments/hhm-cli"]
+	path = apps/deployments/hhm-cli
+	url = https://github.com/hacker-house-medellin/hhm-cli.git
+	branch = main
+[submodule "apps/deployments/hhm-infra"]
+	path = apps/deployments/hhm-infra
+	url = https://github.com/hacker-house-medellin/hhm-infra.git
+	branch = main
+[submodule "apps/deployments/hhm-flutter"]
+	path = apps/deployments/hhm-flutter
+	url = https://github.com/hacker-house-medellin/hhm-flutter.git
+	branch = main
+[submodule "apps/deployments/hhm-desktop-app.rs"]
+	path = apps/deployments/hhm-desktop-app.rs
+	url = https://github.com/hacker-house-medellin/hhm-desktop-app.rs.git
+	branch = main
+[submodule "apps/deployments/hhm-api-server.rs"]
+	path = apps/deployments/hhm-api-server.rs
+	url = https://github.com/hacker-house-medellin/hhm-api-server.rs.git
+	branch = main
+[submodule "apps/deployments/hhm-web-server.rs"]
+	path = apps/deployments/hhm-web-server.rs
+	url = https://github.com/hacker-house-medellin/hhm-web-server.rs.git
+	branch = main
+[submodule "apps/deployments/hhm-lib-core"]
+	path = apps/deployments/hhm-lib-core
+	url = https://github.com/hacker-house-medellin/hhm-lib-core.git
+	branch = main
+[submodule "apps/deployments/hhm-e2e"]
+	path = apps/deployments/hhm-e2e
+	url = https://github.com/hacker-house-medellin/hhm-e2e.git
+	branch = main
+[submodule "apps/deployments/hhm-leptos-web"]
+	path = apps/deployments/hhm-leptos-web
+	url = https://github.com/hacker-house-medellin/hhm-leptos-web.git
+	branch = main
+[submodule "apps/deployments/hhm-dioxus-web"]
+	path = apps/deployments/hhm-dioxus-web
+	url = https://github.com/hacker-house-medellin/hhm-dioxus-web.git
+	branch = main
+[submodule "apps/deployments/hhm-mcp-server.rs"]
+	path = apps/deployments/hhm-mcp-server.rs
+	url = https://github.com/hacker-house-medellin/hhm-mcp-server.rs.git
+	branch = main
