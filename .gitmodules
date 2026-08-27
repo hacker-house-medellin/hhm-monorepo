@@ -54,3 +54,7 @@
 	path = apps/deployments/hhm-mcp-server.rs
 	url = https://github.com/hacker-house-medellin/hhm-mcp-server.rs.git
 	branch = main
+[submodule "apps/deployments/hhm-sidecar.rs"]
+	path = apps/deployments/hhm-sidecar.rs
+	url = https://github.com/hacker-house-medellin/hhm-sidecar.rs.git
+	branch = main
