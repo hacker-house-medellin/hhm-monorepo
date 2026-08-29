@@ -11,19 +11,20 @@ vcs = "git"
 url = "https://github.com/hacker-house-medellin/hhm-monorepo"
 
 [install]
+adapter = "none"
 dir = ".vendor/.zed"
 
 [dependencies]
-"hacker-house-medellin/hhm-clients" = "^0.1.0"
-"hacker-house-medellin/hhm-interfaces" = "^0.1.0"
-"hacker-house-medellin/hhm-libs" = "^0.1.0"
-"hacker-house-medellin/hhm-sync" = "^0.1.0"
-"shared-auth/shared-auth-clients" = "^0.1.0"
+# Exact gitlinks own deployment composition until these packages are published
+# to the Zed registry.
 
 [publish]
 include_readme = true
 tag_format = "v{version}"
-exclude = [".env", ".env.*", "node_modules/**", "target/**", "dist/**", "*.log", ".vendor/.zed/**"]
+exclude = [".env", ".env.*", "node_modules/**", "target/**", "dist/**", "*.log", ".zed/**", ".vendor/.zed/**", "apps/deployments/**"]
+
+[targets.repository]
+dir = "."
 
 [scripts]
 test = "bash scripts/test.sh"

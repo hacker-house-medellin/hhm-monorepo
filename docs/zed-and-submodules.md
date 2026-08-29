@@ -5,9 +5,10 @@
 ## Ownership rule
 
 - `.zpkg.toml` is authoritative for package dependencies and installs them under `.vendor/.zed`.
-- `.gitmodules`, when present, may track composition-only repositories that are **not** listed in `[dependencies]`.
+- `.gitmodules` tracks the 14 deployment and integration repositories under `apps/deployments`; none may also appear in `[dependencies]`.
 - Equivalent GitHub HTTPS, SSH, and `git://` URLs are normalized before comparison.
-- `hhm-infra` and `hhm-cli` are intentionally excluded from both the Zed graph and Git submodules. Infrastructure is deployed independently; the CLI consumes the package graph rather than being composed by it.
+- `.zed-submodules.tsv` classifies every gitlink as a workspace or an explicit reference. CLI and infrastructure are deployment workspaces, while the alternate Leptos and Dioxus servers are experiment references.
+- Each gitlink records an exact commit. The `branch = main` hint supports maintenance commands but does not make a checkout float at runtime.
 
 ## Commands
 
@@ -16,6 +17,6 @@ bash scripts/validate-zed-submodules.sh
 bash scripts/zed-install-with-submodules.sh
 ```
 
-The installer runs the ownership guard, delegates to `zed install --git-submodules`, and validates again. Generated `.vendor/.zed` state stays uncommitted. A `.zpkg.lock` should be committed only when produced by a real resolver run against published package versions.
+The installer runs the ownership guard, delegates to `zed install --git-submodules`, and validates again. Generated `.vendor/.zed` state stays uncommitted. The generated `.zpkg.lock` is committed so even an intentionally empty published-package graph has a reproducible resolver result.
 
 For migration from legacy submodules, run `zed overtake --git-submodules` only in a clean worktree, review `.zpkg.toml` and `.zpkg.lock`, and re-run the validator before committing.
