@@ -6,15 +6,24 @@ Use these repository and Zed package identities for all new work:
 
 - `hhm-interfaces`
 - `hhm-clients`
-- `hhm-libs`
-- `hhm-cli`
 - `hhm-sync`
-- `hhm-api`
-- `hhm-mash-web`
+- `hhm-cli`
+- `hhm-infra`
+- `hhm-flutter`
+- `hhm-desktop-app.rs`
+- `hhm-api-server.rs`
+- `hhm-web-server.rs`
+- `hhm-lib-core`
+- `hhm-monorepo`
+- `hhm-e2e`
+
+These established integration repositories also remain part of the deployment graph:
+
+- `hhm-mcp-server.rs`
 - `hhm-leptos-web`
 - `hhm-dioxus-web`
-- `hhm-monorepo`
-- planned: `hhm-mcp-server.rs`
+
+The earlier `hhm-api`, `hhm-mash-web`, and `hhm-libs` repositories remain provenance sources for their canonical `*-server.rs` and `*-lib-core` successors; useful history must be ported, not discarded.
 
 Do not introduce dependencies, releases, submodules, or documentation that make the full organization name a second package prefix.
 
@@ -25,7 +34,7 @@ The following repositories are superseded by the short-name family:
 | Superseded | Canonical |
 | --- | --- |
 | `hacker-house-medellin-clients` | `hhm-clients` |
-| `hacker-house-medellin-libs` | `hhm-libs` |
+| `hacker-house-medellin-libs` | `hhm-lib-core` |
 | `hacker-house-medellin-monorepo` | `hhm-monorepo` |
 
 Consolidation is deliberately conservative:
@@ -51,7 +60,7 @@ references/compat	experiment-reference
 
 Valid classifications are `workspace`, `inventory`, `embedded-source`, `experiment-reference`, and `legacy`.
 
-The same repository must not be both a Zed dependency and a gitlink in one composition. Infrastructure repositories remain separate and must not be added as monorepo submodules.
+The same repository must not be both a Zed dependency and a gitlink in one composition. This monorepo deliberately pins the deployment repositories—including CLI and infrastructure—under `apps/deployments`; that makes their exact revisions visible without turning them into package dependencies.
 
 ## Enforcement
 
@@ -61,6 +70,6 @@ The same repository must not be both a Zed dependency and a gitlink in one compo
 - committed Zed materialization directories;
 - unclassified gitlinks;
 - a repository represented by both Zed and a submodule;
-- infrastructure repositories used as submodules.
+- missing or extra deployment classifications.
 
 The regular test entrypoint runs this guard so local and CI behavior stay aligned.

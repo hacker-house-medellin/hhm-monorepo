@@ -3,6 +3,9 @@ dist/
 .astro/
 .wrangler/
 coverage/
+target/
+.zed/
+.vendor/.zed/
 .env
 .env.*
 !.env.example
