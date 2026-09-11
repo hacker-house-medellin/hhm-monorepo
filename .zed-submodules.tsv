@@ -1,0 +1,14 @@
+apps/deployments/hhm-clients	workspace
+apps/deployments/hhm-interfaces	workspace
+apps/deployments/hhm-sync	workspace
+apps/deployments/hhm-cli	workspace
+apps/deployments/hhm-infra	workspace
+apps/deployments/hhm-flutter	workspace
+apps/deployments/hhm-desktop-app.rs	workspace
+apps/deployments/hhm-api-server.rs	workspace
+apps/deployments/hhm-web-server.rs	workspace
+apps/deployments/hhm-lib-core	workspace
+apps/deployments/hhm-e2e	workspace
+apps/deployments/hhm-leptos-web	experiment-reference
+apps/deployments/hhm-dioxus-web	experiment-reference
+apps/deployments/hhm-mcp-server.rs	workspace
