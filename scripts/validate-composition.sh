@@ -67,8 +67,8 @@ normalize_github_repo() {
 
 if [[ -f .gitmodules ]]; then
   module_count="$(git config -f .gitmodules --get-regexp '^submodule\..*\.url$' | wc -l | tr -d ' ')"
-  [[ "$module_count" = 14 ]] || {
-    printf 'error: expected 14 deployment gitlinks, found %s\n' "$module_count" >&2
+  [[ "$module_count" = 15 ]] || {
+    printf 'error: expected 15 deployment gitlinks, found %s\n' "$module_count" >&2
     status_code=1
   }
 
