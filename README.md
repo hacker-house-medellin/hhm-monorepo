@@ -23,3 +23,7 @@ The deployment set includes the complete canonical repository family—clients, 
 ./scripts/test.sh
 ./scripts/validate-zed-submodules.sh
 ```
+
+## AttoLang rollout discovery
+
+`catalog.json.language_support.atto` lists the proposed `hhm-clients` and `hhm-interfaces` .atto source entry points. `node scripts/describe.mjs` prints its **draft-source-contract** state, and `npm test` checks the catalog fields and avoids falsely claiming guest compiler/runtime validation. Do not promote this inventory status to runnable until independent exact-head Atto guest tests pass.

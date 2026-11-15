@@ -12,3 +12,4 @@ apps/deployments/hhm-e2e	workspace
 apps/deployments/hhm-leptos-web	experiment-reference
 apps/deployments/hhm-dioxus-web	experiment-reference
 apps/deployments/hhm-mcp-server.rs	workspace
+apps/deployments/hhm-sidecar.rs	workspace
