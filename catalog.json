@@ -1,12 +1,13 @@
 {
   "org": "hacker-house-medellin",
-  "brand": "Hacker House Medell\u00edn",
+  "brand": "Hacker House Medellín",
   "repos": {
     "clients": "hacker-house-medellin/hhm-clients",
     "libs": "hacker-house-medellin/hhm-libs",
     "monorepo": "hacker-house-medellin/hhm-monorepo",
     "infra": "hacker-house-medellin/hhm-infra",
-    "marketing": "hacker-house-medellin/hacker-house-medellin.github.io"
+    "marketing": "hacker-house-medellin/hacker-house-medellin.github.io",
+    "interfaces": "hacker-house-medellin/hhm-interfaces"
   },
   "apps": [
     "api",
@@ -48,5 +49,19 @@
     "WhatsApp",
     "Community events",
     "Occupancy sensors"
-  ]
+  ],
+  "language_support": {
+    "atto": {
+      "phase": "draft-source-contract",
+      "runtime_verified": false,
+      "clients_repo": "hacker-house-medellin/hhm-clients",
+      "interfaces_repo": "hacker-house-medellin/hhm-interfaces",
+      "client_source": "clients/atto/src/hhm_client.atto",
+      "interface_sources": [
+        "bindings/atto/src/visitor_access.atto",
+        "bindings/atto/src/reservation_status.atto"
+      ],
+      "validation": "static-node-parity; guest-compiler-unverified"
+    }
+  }
 }
