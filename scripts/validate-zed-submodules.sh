@@ -37,8 +37,8 @@ allowed_classifications='^(workspace|inventory|embedded-source|experiment-refere
 module_count="$(git config -f .gitmodules --get-regexp '^submodule\..*\.url$' | wc -l | tr -d ' ')"
 classification_count="$(awk -F '\t' 'NF == 2 && $1 !~ /^#/ { count += 1 } END { print count + 0 }' .zed-submodules.tsv)"
 
-[[ "$module_count" = 14 ]] || {
-  printf 'expected 14 deployment submodules, found %s\n' "$module_count" >&2
+[[ "$module_count" = 15 ]] || {
+  printf 'expected 15 deployment submodules, found %s\n' "$module_count" >&2
   exit 1
 }
 [[ "$classification_count" = "$module_count" ]] || {
